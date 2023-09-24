@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>This is H2 tag</h2>
+    <h2 id="root"></h2>
+
+
+    <script>
+        let target =  document.getElementById("root")
+        let newEle = document.createElement("h2");
+        newEle.innerHTML = 'This is H2 tag created from js';
+        target.appendChild(newEle);
+    </script>
 </body>
 </html>
