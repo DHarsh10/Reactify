@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reactify</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h2 id="root"></h2>
+    <div id="root"></div>
 
 
-    <script>
-        let target = document.getElementById("root")
-        let newEle = document.createElement("h2");
-        newEle.innerHTML = 'This is H2 tag created from js';
-        target.appendChild(newEle);
-    </script>
+   
 
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./main.js"></script>
+
+    <!-- <script>
+        const element  = React.createElement("h1", {}, "Hello form React");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(element)
+        
+    </script> -->
 </body>
 
 </html>
